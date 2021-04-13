@@ -37,7 +37,7 @@ h1{
   color: #f0f0f0;
   text-shadow: 2px 2px 2px #0008;
   opacity: 0;
-  animation: moveTitle 1s 0.5s forwards;
+  animation: moveTitle 1.5s forwards;
 }
 
 .principal{
@@ -70,7 +70,7 @@ h1{
   border-radius: 10px;
   box-shadow: 0.2rem 0.2rem 0.2rem #000;
   opacity: 0;
-  animation: moveCards 1s 0.5s forwards;
+  animation: moveCards 1.5s forwards;
 }
 
 .sessao-card{
