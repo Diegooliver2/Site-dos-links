@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "baloo da 2";
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-button{
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+body{
+  background-color: rgb(0,0,0);
+}
+
+header{
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  background: #07080b;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 2px #0008;
+  animation: moveTitle 1s 0.5s forwards;
+}
+
+.principal{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8,8,8, 0.5), rgba(8,8,8,0.5)),url(./imagens/note.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.principal h2{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5%;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-links{
+  width: 100%;
+  height: 100%;
+  margin: 7.5% auto 40px auto;
+  padding: 1.5%;
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0.2rem 0.2rem 0.2rem #000;
+  opacity: 0;
+  animation: moveCards 1s 0.5s forwards;
+}
+
+.sessao-card{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  width: 100%;
+  min-height: 7.0rem;
+  margin: 0.15rem;
+  background-color: #aaa8;
+  border-radius: 5px;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0, .7);
+}
+
+.card a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: "mulish";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.card:hover{
+  background-color: #ccca;
+  transition: 0.5s;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #07080b;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes moveCards {
+  0%{
+      transform: translateY(10rem) rotateX(-45deg);
+  }
+  100%{
+      transform: translateY(0) rotateX(0deg);
+      opacity: 1;
+  }
+}
+
+@keyframes moveTitle {
+  0%{
+    transform: translateY(-10rem);
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+footer p{
+  color: #a7a7a7;
+  text-shadow: 1px 1px 1px #555555;
+  font-size: 0.8rem;
+}
